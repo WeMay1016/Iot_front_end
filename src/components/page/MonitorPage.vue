@@ -2,7 +2,7 @@
     <div id="monitorHead">
       <video id="myPlayer" poster="http://open.ys7.com/asdf.jpg" controls playsInline webkit-playsinline autoplay >
         <source src="rtmp://rtmp.open.ys7.com/openlive/45279cdf900d48d38609d6b619a8bdb8" type="rtmp/flv" />
-        <source src="http://hls.open.ys7.com/openlive/45279cdf900d48d38609d6b619a8bdb8.m3u8" type="application/x-mpegURL" />
+        <source src="http://192.168.10.232:80/user=admin&password=" type="application/x-mpegURL" />
       </video>
     </div>
 </template>

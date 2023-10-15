@@ -26,6 +26,7 @@ routers.beforeEach((to, from, next) => {
   }
 });
 
+
 new Vue({
   el: '#app',
   router,

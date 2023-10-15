@@ -71,7 +71,7 @@
 
       </el-submenu>
       <el-menu-item index="2" v-show="isShow">
-        <router-link to="/cameraMonitor" tag="li" >
+        <router-link to="/video" tag="li" >
           <i class="el-icon-location"></i>
           摄像监控
         </router-link>

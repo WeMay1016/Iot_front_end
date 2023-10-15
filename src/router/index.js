@@ -38,6 +38,8 @@ import MainOrg from '@/components/MainOrg'
 // import MonitorPage from '@/components/page/MonitorPage'
 const MonitorPage = ()  => import ('@/components/page/MonitorPage');
 
+const VideoList = ()  => import ('@/components/page/VideoList');
+
 // import NodeOne from '@/components/page/NodeOne'
 const NodeOne = ()  => import ('@/components/page/NodeOne');
 // import NodeTwo from '@/components/page/NodeTwo'
@@ -68,7 +70,7 @@ export default new Router({
       hidden: true
     },
     {
-      path: '/',
+      path: '/app',
       component: App,
       name: '导航一',
       children: [
@@ -80,6 +82,7 @@ export default new Router({
 
         { path: '/userEdit', component: UserEdit, name: '用户管理' },
         { path: '/cameraMonitor', component: MonitorPage, name: '监控摄像' },
+        { path: '/video', component: VideoList, name: '监控' },
 
         { path: '/terminalController', component: TerminalController, name: '终端控制' },
 

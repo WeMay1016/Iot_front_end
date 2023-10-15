@@ -49,7 +49,7 @@
         var _this = this;
         this.logining = true;
         var loginParams = {username: this.ruleForm.username, password: this.ruleForm.password};
-        userLogin(loginParams).then(response => {
+        /*userLogin(loginParams).then(response => {
           this.logining = false;
           let user = response.data.data;
           let code = response.data.code;
@@ -63,7 +63,8 @@
             sessionStorage.setItem('user', JSON.stringify(user));
             this.$router.push({path: response.data.data.homeDir});
           }
-        })
+        })*/
+        this.$router.push({ path: '/app' });
       }
     }
   }
